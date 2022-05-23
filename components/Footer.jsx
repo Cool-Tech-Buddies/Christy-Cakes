@@ -15,12 +15,20 @@ const Footer = () => {
         </div>
         <div className={styles.card}>
           <h1 className={styles.title}>Contact Us</h1>
+          <h2 className={styles.title}>Address</h2>
           <p className={styles.text}>
-            1654 R. Don Road #304.
-            <br /> NewYork, 85022
-            <br /> (602) 867-1010
+            <pre>
+          2/6, Raja nagar
+          Rasampalayam 
+          Erode 
+          638107
+          </pre>
+           
           </p>
-         
+          <h2 className={styles.title}>Email</h2>
+          <p className={styles.text}>dovzippi21@gmail.com</p>
+          <h1 className={styles.title}>WhatsApp</h1>
+          <p className={styles.text}>+91 63819 25745</p>
         </div>
         <div className={styles.card}>
           <h1 className={styles.title}>WORKING HOURS</h1>

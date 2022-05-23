@@ -13,7 +13,7 @@ const Navbar = () => {
         </div>
         <div className={styles.texts}>
           <div className={styles.text}>ORDER NOW!</div>
-          <div className={styles.text}>+91 9629784033</div>
+          <div className={styles.text}>+91 63819 25745</div>
         </div>
       </div>
       <div className={styles.item}>
