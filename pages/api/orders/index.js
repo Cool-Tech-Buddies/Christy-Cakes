@@ -20,8 +20,7 @@ const handler = async (req, res) => {
       res.status(201).json(order);
     } catch (err) {
       res.status(500).json(err);
-    }
-  }
+    }  }
 };
 
 export default handler;
