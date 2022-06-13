@@ -4,7 +4,7 @@ import CakeCard from "./CakeCard";
 const CakeList = ({ cakeList }) => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Our Delicious</h1>
+      <h1 className={styles.title}>OUR DELICIOUS</h1>
       <p className={styles.desc}>
       
       </p>
