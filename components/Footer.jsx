@@ -26,6 +26,7 @@ const Footer = () => {
            
           </p>
           <h2 className={styles.title}>Email</h2>
+          <p className={styles.text}></p>
           <p className={styles.text}>dovzippi21@gmail.com</p>
           <h1 className={styles.title}>WhatsApp</h1>
           <p className={styles.text}>+91 63819 25745</p>
