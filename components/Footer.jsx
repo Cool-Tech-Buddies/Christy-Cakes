@@ -41,6 +41,7 @@ const Footer = () => {
               <p className={styles.text}>  <i className="fa fa-envelope" aria-hidden="true"></i>  dovzippi21@gmail.com </p>
             </p>
           </p>
+<<<<<<< HEAD
 
           <p>
             <p className={styles.text}><i class="fa fa-phone" aria-hidden="true"></i>+91 63819 25745</p>
@@ -53,6 +54,13 @@ const Footer = () => {
             <a href="#" class="fab fa-whatsapp"></a>
 
           </div>
+=======
+          <h2 className={styles.title}>Email</h2>
+          <p className={styles.text}></p>
+          <p className={styles.text}>dovzippi21@gmail.com</p>
+          <h1 className={styles.title}>WhatsApp</h1>
+          <p className={styles.text}>+91 63819 25745</p>
+>>>>>>> d15c09552f1f8f41d107ecad9d4b9043c0f895bf
         </div>
         
         <div className={styles.card}>
