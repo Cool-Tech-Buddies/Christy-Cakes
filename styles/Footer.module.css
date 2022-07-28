@@ -1,7 +1,21 @@
 .container {
-  height: calc(80vh - 100px);
+  height: calc(80vh - 200px);
   background-color: #222;
   display: flex;
+  justify-content: space-between;
+}
+.img
+{
+flex:0.6;
+  position: relative;
+  border-radius: 50%;
+  padding: 10px;
+  border:5px solid #fff;
+  display: flex;
+  height: 300px;
+  width:300px;
+  
+  
 }
 
 .item {
@@ -19,6 +33,7 @@
 .card {
   flex: 1;
   padding: 0 20px;
+
 }
 
 .title {
@@ -29,11 +44,75 @@
 .text {
   color: lightgray;
 }
+p .text{
+  color:#fff;
+}
 
 .motto {
   color: rgb(211, 211, 211);
 }
 
+.share{
+
+  text-align: center;
+ 
+}
+.btn
+{
+  color: rgb(251, 249, 249);
+  background-color: #868383;
+  padding: 10px;
+  font-size: 1rem;
+  flex:0;
+  cursor: pointer;
+
+  border-radius: 5px;
+
+}
+
+.forminput{
+
+    height: 100%;
+    font-size: 1rem;
+    background-color: rgb(205, 192, 124);
+    color: #000;
+    margin-right: 7%;
+    border-radius: 5px;
+    padding: 10px;
+    flex:3;
+    outline: none;
+}
+
+ .share a{
+  height: 2.5rem;
+  width: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+
+  background: #000;
+margin:0.3rem;
+
+  border-radius: 50%;
+  color:#fff;
+
+}
+ .share a:hover{
+  background: #fff;
+  color: #000;
+}
+.logo
+{
+  font-size: 50px;
+  
+  font-family: 'Great Vibes', cursive;
+  margin: 5px;
+  font-weight: bolder;
+}
+.inputgrp
+{
+  display:flex;
+  justify-content: space-between;
+}
 @media screen and (max-width: 480px) {
   .container {
     height: auto;

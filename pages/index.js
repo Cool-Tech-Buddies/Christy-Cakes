@@ -8,6 +8,7 @@ import Featured from "../components/Featured";
 import CakeList from "../components/CakeList";
 import Offers from "../components/Offers";
 import styles from "../styles/Home.module.css";
+
 export const getServerSideProps = async (ctx) => {
   const myCookie = ctx.req?.cookies || "";
   let admin = false;
@@ -33,22 +34,11 @@ export default function Home({ cakeList, admin }) {
         <title>Christy Cakes</title>
         <meta name="description" content="Best cake shop in town" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
       </Head>
    
       <Featured />
-      {/* <section class="cta" data-aos="fade-up" data-aos-delay="0">
-        <div class="container">
-            <div class="cta-content d-xl-flex align-items-center justify-content-around text-center text-xl-left">
-                <div class="content" data-aos="fade-right" data-aos-delay="200">
-                    <h2>CUSTOM YOUR OWN CAKES</h2>
-                    <p>Create a cake all your own!Add your choice of fillings,frostings<br> and decorations to customize your perfet cake!!  </p>
-                </div>
-                <div class="subscribe-btn" data-aos="fade-left" data-aos-delay="400" data-aos-offset="0">
-                    <a href="#" class="btn btn-primary">Design Cake</a>
-                </div>
-            </div>
-        </div>
-    </section> */}
+     
       <div className={styles.contain}>
         <div className={styles.contain2}></div>
         <div>
@@ -60,6 +50,7 @@ export default function Home({ cakeList, admin }) {
       {admin==true?<AddButton setClose={setClose} />:  null}
       <CakeList cakeList={cakeList} />
       {!close && <Add setClose={setClose} />}
+     
       <Offers></Offers>
     </div>
   );

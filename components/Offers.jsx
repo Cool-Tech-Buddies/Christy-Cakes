@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const Offers = () => {
   return (
-    <div id="offers" className={styles.container}>
-     offers
-    </div>
+    <div id="offers">
+  
+</div>
   );
 };
 

@@ -5,12 +5,16 @@ import Link from "next/link";
 const CakeCard = ({ cake }) => {
   return (
     <div className={styles.container}>
-      <Link href={`/product/${cake._id}`} passHref>
+      <div className={styles.cardtop}>
         <Image src={cake.img} alt="" width="500" height="500" />
-      </Link>
+      </div>
       <h1 className={styles.title}>{cake.title}</h1>
-      <span className={styles.price}>Rs.{cake.prices[0]}</span>
       <p className={styles.desc}>{cake.desc}</p>
+
+      <span className={styles.price}>1Kg Rs.{cake.prices[0]}</span>
+      <Link href={`/product/${cake._id}`} passHref>
+        <button className={styles.btn}>View more</button>
+      </Link>
     </div>
   );
 };

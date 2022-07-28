@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 .container {
-  height: 100px;
-  padding: 0px 50px;
-  background-color: #d1411e;
+  height: 75px;
+  padding: 0px 60px;
+  background-color:  #ee1515;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,7 +12,7 @@
 }
 .logo
 {
-  font-size: 50px;
+  font-size: 47px;
   
   font-family: 'Great Vibes', cursive;
   margin: 5px;
@@ -67,8 +67,14 @@
   margin: 20px;
   font-weight: 500;
   cursor: pointer;
+  padding-bottom: 5px;
 }
+.container .listItem:hover{
+  border-bottom: 3px solid #fff;
+ padding-top: 5px;
 
+ 
+}
 .cart{
     position: relative;
 }
