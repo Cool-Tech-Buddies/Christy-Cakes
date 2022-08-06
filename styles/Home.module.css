@@ -1,63 +1,61 @@
 .contain {
-    font-family :"Open Sans", sans-serif;
-    font-size :16px;
-    font-weight: 400;
-    line-height : 24px;
-    text-align : left;
-    text-size-adjust :100%;
-    color :rgb(255, 255, 255);
-    margin-left:200px;
-    
-background-color : #e21b1b;
-font-family :"Open Sans", sans-serif;
-font-size :16px;
-font-weight :400;
-line-height :24px;
-text-align :left;
-text-size-adjust :100%;
-align-items: center;
-box-sizing: border-box;
-display :flex;
-height :230.4px;
-justify-content :space-around;
-padding-bottom :90px;
-padding-left :0px;
-padding-right :0px;
-padding-top :30px;
-position :relative;
-width :1110px;
-z-index :1;
-border-bottom-left-radius :200px;
-border-top-right-radius :200px;
--webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-  
-  .btn
-  {
-    color: #fff;
-    background-color: #ee1515;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-size-adjust: 100%;
+  color: rgb(255, 255, 255);
+  margin-left: 200px;
 
-    padding: 1rem;
-    cursor: pointer;
-    border-radius: 40%;
+  background-color: #e21b1b;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-size-adjust: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  height: 230.4px;
+  justify-content: space-around;
+  padding-bottom: 90px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 30px;
+  position: relative;
+  width: 1110px;
+  z-index: 1;
+  border-bottom-left-radius: 200px;
+  border-top-right-radius: 200px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
-  }
-  .contain2 {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgba(24, 9, 53, 0.77);
-    position: absolute;
-    top: -25px;
-    left: -1px;
-    z-index: -1;
-    transition: all 0.2s ease-in-out;
-    border-top-right-radius: 200px;
-    border-bottom-left-radius: 200px; 
-  }
-  .featured {
-    padding: 80px 0;
-    background-color: #fafafa;
+.btn {
+  color: #fff;
+  background-color: #ee1515;
+
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 40%;
+}
+.contain2 {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 9, 53, 0.77);
+  position: absolute;
+  top: -25px;
+  left: -1px;
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+}
+.featured {
+  padding: 80px 0;
+  background-color: #fafafa;
 }
 .title {
   font-weight: 700;
@@ -76,29 +74,30 @@ border-top-right-radius :200px;
   justify-content: space-between !important;
 }
 .btn {
-    display: inline-block;
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 600;
-    color: #fff;
-    background-color: #ee1515;
-    border-color: #ee1515;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: 0.6875rem 3.5625rem;
-    font-size: 1.125rem;
-    line-height: 1.5;
-    border-top-right-radius: 1.5625rem;
-    border-bottom-left-radius: 1.5625rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    text-transform: uppercase;
-    position: relative;
-    z-index: 1;
+  display: inline-block;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  background-color: #ee1515;
+  border-color: #ee1515;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.6875rem 3.5625rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  border-top-right-radius: 1.5625rem;
+  border-bottom-left-radius: 1.5625rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
 }
 
 .row {

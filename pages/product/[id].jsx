@@ -9,7 +9,7 @@ const Product = ({ cake }) => {
   const [price, setPrice] = useState(cake.prices[0]);
   const [size, setSize] = useState(0);
   const [quantity, setQuantity] = useState(1);
-  const [extras, setExtras] = useState([]);
+  const [Name, setName] = useState([]);
   const dispatch = useDispatch();
 
   const changePrice = (number) => {
@@ -22,20 +22,12 @@ const Product = ({ cake }) => {
     changePrice(difference);
   };
 
-  const handleChange = (e, option) => {
-    const checked = e.target.checked;
-
-    if (checked) {
-      changePrice(option.price);
-      setExtras((prev) => [...prev, option]);
-    } else {
-      changePrice(-option.price);
-      setExtras(extras.filter((extra) => extra._id !== option._id));
-    }
+  const handleChange = (e) => {
+    setName(e);
   };
 
   const handleClick = () => {
-    dispatch(addProduct({...cake, extras, price, quantity}));
+    dispatch(addProduct({ ...cake, Name, price, quantity }));
   };
 
   return (
@@ -63,22 +55,22 @@ const Product = ({ cake }) => {
             <Image src="/img/size.png" layout="fill" alt="" />
             <span className={styles.number}>1 kg</span>
           </div>
+          <div className={styles.size} onClick={() => handleSize(3)}>
+            <Image src="/img/size.png" layout="fill" alt="" />
+            <span className={styles.number}>2 kg</span>
+          </div>
         </div>
-        <h3 className={styles.choose}>Choose additional ingredients</h3>
-        <div className={styles.ingredients}>
-          {cake.extraOptions.map((option) => (
-            <div className={styles.option} key={option._id}>
-              <input
-                type="checkbox"
-                id={option.text}
-                name={option.text}
-                className={styles.checkbox}
-                onChange={(e) => handleChange(e, option)}
-              />
-              <label htmlFor="double">{option.text}</label>
-            </div>
-          ))}
+        <h3 className={styles.choose}> Name on the Cake</h3>
+
+        <div>
+          <input
+            type="text"
+            name="name"
+            className={styles.textbox}
+            onChange={(e) => handleChange(e.target.value)}
+          />
         </div>
+
         <div className={styles.add}>
           <input
             onChange={(e) => setQuantity(e.target.value)}

@@ -8,8 +8,7 @@ const Add = ({ setClose }) => {
   const [title, setTitle] = useState(null);
   const [desc, setDesc] = useState(null);
   const [prices, setPrices] = useState([]);
-  const [extraOptions, setExtraOptions] = useState([]);
-  const [extra, setExtra] = useState(null);
+  const [custom, setCustomType] = useState("None");
 
   const changePrice = (e, index) => {
     const currentPrices = prices;
@@ -31,8 +30,7 @@ const Add = ({ setClose }) => {
     data.append("upload_preset", "uploads");
     try {
       const uploadRes = await axios.post(
- "https://api.cloudinary.com/v1_1/dqay036l4/image/upload"
- ,
+        "https://api.cloudinary.com/v1_1/dqay036l4/image/upload",
         data
       );
 
@@ -41,7 +39,7 @@ const Add = ({ setClose }) => {
         title,
         desc,
         prices,
-        extraOptions,
+        custom,
         img: url,
       };
 
@@ -100,36 +98,30 @@ const Add = ({ setClose }) => {
               placeholder="1 kg"
               onChange={(e) => changePrice(e, 2)}
             />
-          </div>
-        </div>
-        <div className={styles.item}>
-          <label className={styles.label}>Extra </label>
-          <div className={styles.extra}>
-            <input
-              className={`${styles.input} ${styles.inputSm}`}
-              type="text"
-              placeholder="Item"
-              name="text"
-              onChange={handleExtraInput}
-            />
             <input
               className={`${styles.input} ${styles.inputSm}`}
               type="number"
-              placeholder="Price"
-              name="price"
-              onChange={handleExtraInput}
+              placeholder="2 kg"
+              onChange={(e) => changePrice(e, 3)}
             />
-            <button className={styles.extraButton} onClick={handleExtra}>
-              Add
-            </button>
           </div>
-          <div className={styles.extraItems}>
-            {extraOptions.map((option) => (
-              <span key={option.text} className={styles.extraItem}>
-                {option.text}
-              </span>
-            ))}
-          </div>
+        </div>
+        <div className={styles.item}>
+          <label className={styles.label}>Custome cakes</label>
+          <select
+            name="custom"
+            id="custom cakes"
+            value={custom}
+            onChange={(e) => setCustomType(e.target.value)}
+          >
+            <option value="None">None</option>
+            <option value="kidsBirthday">Kids Cakes</option>
+            <option value="Wedding Cakes">Wedding Cakes</option>
+            <option value="Photo Cakes">Photo Cakes</option>
+            <option value="Occasional cakes">Occasional cakes</option>
+            <option value="Theme cakes">Theme cakes</option>
+            <option value="Celebration cakes">Celebration cakes</option>
+          </select>
         </div>
         <button className={styles.addButton} onClick={handleCreate}>
           Create

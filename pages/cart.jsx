@@ -17,7 +17,7 @@ const Cart = () => {
   const [open, setOpen] = useState(false);
   const [cash, setCash] = useState(false);
   const amount = cart.total;
-  const currency = "USD";
+  const currency = "IND";
   const style = { layout: "vertical" };
   const dispatch = useDispatch();
   const router = useRouter();
@@ -99,7 +99,7 @@ const Cart = () => {
             <tr className={styles.trTitle}>
               <th>Product</th>
               <th>Name</th>
-              <th>Extras</th>
+
               <th>Price</th>
               <th>Quantity</th>
               <th>Total</th>
@@ -121,13 +121,7 @@ const Cart = () => {
                 <td>
                   <span className={styles.name}>{product.title}</span>
                 </td>
-                <td>
-                  <span className={styles.extras}>
-                    {product.extras.map((extra) => (
-                      <span key={extra._id}>{extra.text}, </span>
-                    ))}
-                  </span>
-                </td>
+
                 <td>
                   <span className={styles.price}>Rs.{product.price}</span>
                 </td>
