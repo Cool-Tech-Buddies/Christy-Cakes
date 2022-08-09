@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Benne&family=Merienda:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600&family=Crimson+Text:ital@1&family=Kaushan+Script&display=swap");
+
 .container {
   width: 20%;
   padding: 0 0px 10px 0px;
@@ -45,6 +48,12 @@
   font-weight: bold;
   color: #d1411e;
   font-family: "Merienda", cursive;
+}
+.titlecustom {
+  font-family: "Kaushan Script", cursive;
+  color: #d1411e;
+  text-align: center;
+  font-size: 2.5rem;
 }
 .titletext {
   font-size: 35px;

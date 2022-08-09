@@ -42,9 +42,12 @@ const index = () => {
       <Special
         img="/img/customer/customer-1.jpg"
         head="Custom cakes"
-        para=" asdfghjkl"
+        para=" Our core focus is on Design & Taste and our aim is to always give you the best cake. Distinct style & unique techniques
+         are used to handcraft a beautiful cake,We offer customized cakes under  the catogries of Kids cake, Wedding cake, Occasional cake, Celebration cakes, Theme cakes and Photo cakes "
       ></Special>
-      <h1 className={styles.titletext}>Our Customized cakes</h1>
+      <h1 className={styles.titlecustom} id="custom">
+        Our Customized cakes
+      </h1>
       <div className={styles.wrapper}>
         {images.map((img, i) => (
           <div key={i} className={styles.container}>

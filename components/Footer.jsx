@@ -22,7 +22,7 @@ const Footer = () => {
 
           <p className={styles.text}>
             <p className={styles.text}>
-              <i class="fa fa-map-marker" aria-hidden="true"></i> 2/6, Raja
+              <i className="fa fa-map-marker" aria-hidden="true"></i> 2/6, Raja
               nagar, Rasampalayam Erode<br></br>
               638107
             </p>
@@ -41,14 +41,14 @@ const Footer = () => {
 
           <p>
             <p className={styles.text}>
-              <i class="fa fa-phone" aria-hidden="true"></i>+91 63819 25745
+              <i className="fa fa-phone" aria-hidden="true"></i>+91 63819 25745
             </p>
           </p>
           <div className={styles.share}>
-            <a href="#" class="fab fa-facebook"></a>
-            <a href="#" class="fab fa-youtube"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-whatsapp"></a>
+            <a href="#" className="fab fa-facebook"></a>
+            <a href="#" className="fab fa-youtube"></a>
+            <a href="#" className="fab fa-instagram"></a>
+            <a href="#" className="fab fa-whatsapp"></a>
           </div>
         </div>
 

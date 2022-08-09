@@ -1,6 +1,6 @@
 .container {
   height: calc(100vh - 100px);
-  background-color:  #ee1515;
+  background-color: #ee1515;
   overflow: hidden;
   position: relative;
 }
@@ -11,31 +11,31 @@
   height: 9%;
   top: 0;
   bottom: 0;
-  margin: auto 5rem ;
+  margin: auto 1rem;
   z-index: 2;
   cursor: pointer;
   background-color: rgba(24, 9, 53, 0.77);
   border-radius: 50%;
-  border: 1px solid ;
+  border: 1px solid;
 }
 
 .wrapper {
-  width: 300vw;
+  width: 100vw;
   height: 100%;
   display: flex;
-  transition: all 1.5s ease-in-out ;
+
+  transition: all 1.5s ease-in-out;
 }
 
 .imgContainer {
-  width: 100vw;
-  height: 80%;
-  position: relative;
-  margin-top:2rem;
+  width: 1000vw;
+  height: 100%;
 
+  position: relative;
 }
 
 @media screen and (max-width: 480px) {
-  .container{
+  .container {
     height: 50vh;
   }
 }

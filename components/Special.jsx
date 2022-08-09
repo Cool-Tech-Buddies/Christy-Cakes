@@ -9,13 +9,7 @@ const Special = (props) => {
           <div className={styles.herotextbox}>
             <h1 className={styles.headingprimary}>{props.head}</h1>
             <p className={styles.herodescription}>{props.para}</p>
-            <a href="#cta" className={styles.btn}>
-              Order your
-            </a>
-
-            <a href="#how" className={styles.btn}>
-              First Customized Cakes &darr;
-            </a>
+            <span className={styles.btn}> Lets Explore </span>
             <div className={styles.deliveredmeals}>
               <div className={styles.deliveredimgs}>
                 <Image
