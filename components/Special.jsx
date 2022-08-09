@@ -18,12 +18,30 @@ const Special = (props) => {
                   layout="fill"
                   objectFit="contain"
                 />
-                <img src="img/customers/customer-1.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-2.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-3.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-4.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-5.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-6.jpg" alt="Customer photo" />
+                <Image
+                  src="img/customers/customer-1.jpg"
+                  alt="Customer photo"
+                />
+                <Image
+                  src="img/customers/customer-2.jpg"
+                  alt="Customer photo"
+                />
+                <Image
+                  src="img/customers/customer-3.jpg"
+                  alt="Customer photo"
+                />
+                <Image
+                  src="img/customers/customer-4.jpg"
+                  alt="Customer photo"
+                />
+                <Image
+                  src="img/customers/customer-5.jpg"
+                  alt="Customer photo"
+                />
+                <Image
+                  src="img/customers/customer-6.jpg"
+                  alt="Customer photo"
+                />
               </div>
               <p className={styles.deliveredtext}>
                 <span>150+</span> Cakes delivered last year!
@@ -31,7 +49,7 @@ const Special = (props) => {
             </div>
           </div>
           <div>
-            <img
+            <Image
               src="/img/custom.png"
               layout="fill"
               objectFit="contain"

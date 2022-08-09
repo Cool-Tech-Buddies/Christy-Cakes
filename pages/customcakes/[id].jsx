@@ -21,7 +21,7 @@ export default function Home({ cakeList, Title }) {
       <Custom TitleName={Title}></Custom>
       <div className={styles.wrapper}>
         {cakeList.map((cakeList) => (
-          <div className={styles.container}>
+          <div className={styles.container} key={cake._id}>
             <div className={styles.cardtop}>
               <Image src={cakeList.img} alt="" width="500" height="500" />
             </div>
