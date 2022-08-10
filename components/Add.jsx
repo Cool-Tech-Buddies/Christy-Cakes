@@ -83,25 +83,25 @@ const Add = ({ setClose }) => {
             <input
               className={`${styles.input} ${styles.inputSm}`}
               type="number"
-              placeholder="1/4 kg"
+              placeholder="1/2 kg"
               onChange={(e) => changePrice(e, 0)}
             />
             <input
               className={`${styles.input} ${styles.inputSm}`}
               type="number"
-              placeholder="1/2 kg"
+              placeholder="1 kg"
               onChange={(e) => changePrice(e, 1)}
             />
             <input
               className={`${styles.input} ${styles.inputSm}`}
               type="number"
-              placeholder="1 kg"
+              placeholder="2 kg"
               onChange={(e) => changePrice(e, 2)}
             />
             <input
               className={`${styles.input} ${styles.inputSm}`}
               type="number"
-              placeholder="2 kg"
+              placeholder="3 kg"
               onChange={(e) => changePrice(e, 3)}
             />
           </div>

@@ -78,9 +78,14 @@ const Footer = () => {
                 placeholder="Email Address"
               />
               <span>
-                <button type="submit" name="submit-mail" className={styles.btn}>
+                <a
+                  type="submit"
+                  name="submit-mail"
+                  className={styles.btn}
+                  href="mailto:mathi2002nagaraj@gmail.com"
+                >
                   Submit
-                </button>
+                </a>
               </span>
             </div>
           </form>

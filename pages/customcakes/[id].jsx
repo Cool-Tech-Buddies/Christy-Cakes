@@ -17,11 +17,11 @@ export const getServerSideProps = async ({ params }) => {
 };
 export default function Home({ cakeList, Title }) {
   return (
-    <div>
+    <div id="custom">
       <Custom TitleName={Title}></Custom>
       <div className={styles.wrapper}>
         {cakeList.map((cakeList) => (
-          <div className={styles.container} key={cake._id}>
+          <div className={styles.container} key={cakeList._id}>
             <div className={styles.cardtop}>
               <Image src={cakeList.img} alt="" width="500" height="500" />
             </div>

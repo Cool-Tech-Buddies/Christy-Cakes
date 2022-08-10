@@ -44,10 +44,11 @@
   transition: all 0.2s;
 }
 .title {
-  font-size: 18px;
+  font-size: 23px;
   font-weight: bold;
   color: #d1411e;
   font-family: "Merienda", cursive;
+  font-family: "Crimson Text", serif;
 }
 .titlecustom {
   font-family: "Kaushan Script", cursive;
@@ -61,12 +62,13 @@
   color: #d1411e;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Merienda", cursive;
+
+  font-family: "Crimson Text", serif;
 }
 .price {
-  font-size: 15px;
-  font-weight: bold;
-  color: #666;
+  font-size: 17px;
+
+  color: rgb(28, 26, 26);
 }
 
 .desc {

@@ -45,19 +45,19 @@ const Product = ({ cake }) => {
         <div className={styles.sizes}>
           <div className={styles.size} onClick={() => handleSize(0)}>
             <Image src="/img/size.png" layout="fill" alt="" />
-            <span className={styles.number}>1/4 kg</span>
+            <span className={styles.number}>1/2 kg</span>
           </div>
           <div className={styles.size} onClick={() => handleSize(1)}>
             <Image src="/img/size.png" layout="fill" alt="" />
-            <span className={styles.number}>1/2 kg</span>
+            <span className={styles.number}>1 kg</span>
           </div>
           <div className={styles.size} onClick={() => handleSize(2)}>
             <Image src="/img/size.png" layout="fill" alt="" />
-            <span className={styles.number}>1 kg</span>
+            <span className={styles.number}>2 kg</span>
           </div>
           <div className={styles.size} onClick={() => handleSize(3)}>
             <Image src="/img/size.png" layout="fill" alt="" />
-            <span className={styles.number}>2 kg</span>
+            <span className={styles.number}>3 kg</span>
           </div>
         </div>
         <h3 className={styles.choose}> Name on the Cake</h3>

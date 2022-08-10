@@ -22,8 +22,7 @@ export const getServerSideProps = async (ctx) => {
 
 export default function Home({ cakeList, admin }) {
   const quantity = useSelector((state) => state.cart.quantity);
-  console.log(admin);
-  console.log(cakeList);
+
   return (
     <div className={styles.container}>
       <div className={styles.item}>

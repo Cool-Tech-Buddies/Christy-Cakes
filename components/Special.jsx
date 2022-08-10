@@ -9,7 +9,10 @@ const Special = (props) => {
           <div className={styles.herotextbox}>
             <h1 className={styles.headingprimary}>{props.head}</h1>
             <p className={styles.herodescription}>{props.para}</p>
-            <span className={styles.btn}> Lets Explore </span>
+            <a href="#custom" className={styles.btn}>
+              Order Cake of your Flavour
+            </a>
+
             <div className={styles.deliveredmeals}>
               <div className={styles.deliveredimgs}>
                 <Image
@@ -18,30 +21,12 @@ const Special = (props) => {
                   layout="fill"
                   objectFit="contain"
                 />
-                <Image
-                  src="img/customers/customer-1.jpg"
-                  alt="Customer photo"
-                />
-                <Image
-                  src="img/customers/customer-2.jpg"
-                  alt="Customer photo"
-                />
-                <Image
-                  src="img/customers/customer-3.jpg"
-                  alt="Customer photo"
-                />
-                <Image
-                  src="img/customers/customer-4.jpg"
-                  alt="Customer photo"
-                />
-                <Image
-                  src="img/customers/customer-5.jpg"
-                  alt="Customer photo"
-                />
-                <Image
-                  src="img/customers/customer-6.jpg"
-                  alt="Customer photo"
-                />
+                <img src="img/customers/customer-1.jpg" alt="Customer photo" />
+                <img src="img/customers/customer-2.jpg" alt="Customer photo" />
+                <img src="img/customers/customer-3.jpg" alt="Customer photo" />
+                <img src="img/customers/customer-4.jpg" alt="Customer photo" />
+                <img src="img/customers/customer-5.jpg" alt="Customer photo" />
+                <img src="img/customers/customer-6.jpg" alt="Customer photo" />
               </div>
               <p className={styles.deliveredtext}>
                 <span>150+</span> Cakes delivered last year!
@@ -49,7 +34,7 @@ const Special = (props) => {
             </div>
           </div>
           <div>
-            <Image
+            <img
               src="/img/custom.png"
               layout="fill"
               objectFit="contain"

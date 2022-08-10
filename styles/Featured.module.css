@@ -1,6 +1,6 @@
 .container {
   height: calc(100vh - 100px);
-  background-color: #ee1515;
+  background-color: rgba(231, 0, 0, 0.985);
   overflow: hidden;
   position: relative;
 }
@@ -20,7 +20,7 @@
 }
 
 .wrapper {
-  width: 100vw;
+  width: 500vw;
   height: 100%;
   display: flex;
 
@@ -28,7 +28,7 @@
 }
 
 .imgContainer {
-  width: 1000vw;
+  width: 100vw;
   height: 100%;
 
   position: relative;

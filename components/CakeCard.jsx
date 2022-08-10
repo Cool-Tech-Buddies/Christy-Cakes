@@ -9,9 +9,9 @@ const CakeCard = ({ cake }) => {
         <Image src={cake.img} alt="" width="500" height="500" />
       </div>
       <h1 className={styles.title}>{cake.title}</h1>
-      {/* <p className={styles.desc}>{cake.desc}</p>
+      {/* <p className={styles.desc}>{cake.desc}</p>*/}
 
-      <span className={styles.price}>1Kg Rs.{cake.prices[0]}</span> */}
+      <span className={styles.price}>1Kg Rs.{cake.prices[0]}</span>
       <Link href={`/product/${cake._id}`} passHref>
         <button className={styles.btn}>View more</button>
       </Link>

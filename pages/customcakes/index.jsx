@@ -55,8 +55,7 @@ const index = () => {
               <Image src={img.src} alt="" width="500" height="500" />
             </div>
             <h1 className={styles.title}>{img.name}</h1>
-            {console.log("link")}
-            {console.log(`/customcakes/${img.link}`)}
+
             <Link href={`/customcakes/${img.link}`} passHref>
               <button className={styles.btn}>View more</button>
             </Link>
