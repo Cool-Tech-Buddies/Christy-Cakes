@@ -61,17 +61,17 @@ const blog = () => {
               FOR A SHORTER TIME PERIOD, REFRIGERATE YOUR CAKE:
             </h3>
             <p className={styles.stepdescription}>
-              Of course you refrigerate your food when you aren’t planning on
-              eating it right away, especially if you have hot, humid days ahead
-              of you. If you need to serve it after a long stretch of hours,
-              cover your cake with an upturned bowl or a cake keeper before
-              putting it in. This is done so that it does not lose moisture or
-              absorb odours from the rest of the food in the fridge. Your cake
-              will remain fresh in the fridge for maximum of 2-3 days,
-              especially if you cover it with a plastic wrap to avoid the cake
-              from drying out. The wrap should be sealed around the cake from
-              all sides, so I would advise that you do not use it along with the
-              plate or carrier on which your cake has been kept.
+              Of course you refrigerate your food when you planning on eating it
+              right away, especially if you have hot, humid days ahead of you.
+              If you need to serve it after a long stretch of hours, cover your
+              cake with an upturned bowl or a cake keeper before putting it in.
+              This is done so that it does not lose moisture or absorb odours
+              from the rest of the food in the fridge. Your cake will remain
+              fresh in the fridge for maximum of 2-3 days, especially if you
+              cover it with a plastic wrap to avoid the cake from drying out.
+              The wrap should be sealed around the cake from all sides, so I
+              would advise that you do not use it along with the plate or
+              carrier on which your cake has been kept.
             </p>
           </div>
 
