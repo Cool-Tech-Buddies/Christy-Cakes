@@ -8,7 +8,7 @@ const blog = () => {
         <div className={styles.container}>
           <h2 className={styles.headingsecondary}>Christy Cake blogs</h2>
           <span className={styles.subheading}>
-            If you bake as much as I do, you’ll know that the work in the
+            If you bake as much as I do, you ll know that the work in the
             kitchen counter does not end with getting the cake out of the oven.
             Preserving them is another essential procedure that should be paid
             attention to as well. And thankfully for all of us, there are
