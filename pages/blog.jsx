@@ -13,8 +13,8 @@ const blog = () => {
             Preserving them is another essential procedure that should be paid
             attention to as well. And thankfully for all of us, there are
             definitely a few simple ways to store and keep your cakes fresh for
-            a longer period. Let's see how to maintain cakes to have long
-            lasting fun,
+            a longer period. Lets see how to maintain cakes to have long lasting
+            fun,
           </span>
         </div>
 
@@ -30,7 +30,7 @@ const blog = () => {
               If a cake has a fluffy cooked frosting, insert a knife handle
               under an edge of the cake cover so it isnt airtight. The frosting
               can be totally absorbed by the cake when stored in an airtight
-              container. If you don't have a cake cover, cakes with creamy
+              container. If you dont have a cake cover, cakes with creamy
               frostings also can be covered lightly with foil, plastic wrap, or
               wax paper. To keep the frosting from sticking to the protective
               covering, insert several toothpicks halfway into the cake around
