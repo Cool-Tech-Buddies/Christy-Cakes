@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/blog.module.css";
-import Special from "../components/Special";
+
 const blog = () => {
   return (
     <div>

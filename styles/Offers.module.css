@@ -1,79 +1,55 @@
-.container {
-  width: 20%;
-  padding: 0 0px 10px 0px;
-  margin: 8px;
-  display: flex;
-  flex-direction: column;
+.sectiontestimonials {
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
   align-items: center;
-  justify-content: center;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  border-radius: 11px;
+}
+
+.testimonialscontainer {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonialimg {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonialtext {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonialname {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.galleryitem {
   overflow: hidden;
-  transition: all 0.4s;
-  cursor: pointer;
-  /* border-radius: 25px;
-  box-shadow: 11px 11px 1px rgba(218, 214, 214, 0.3); */
 }
 
-.wrapper {
+.galleryitem img {
+  display: block;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.container:hover {
-  transform: translateY(-1.2rem);
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
-}
-.btn {
-  color: #fff;
-  background-color: #ee1515;
-  font-size: large;
-  padding: 10px;
-  cursor: pointer;
-  border: 1px solid;
-  border-radius: 5px;
-  margin: 1rem;
-}
-.cardtop {
-  transition: all 0.2s;
-}
-.title {
-  font-size: 18px;
-  font-weight: bold;
-  color: #d1411e;
-}
-.titletext {
-  font-size: 35px;
-  font-weight: bold;
-  color: #d1411e;
-  text-align: center;
-  text-transform: uppercase;
-}
-.price {
-  font-size: 15px;
-  font-weight: bold;
-  color: #666;
+  transition: all 0.4s;
 }
 
-.desc {
-  text-align: center;
-  color: #777;
-  font-size: 17px;
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    width: 100%;
-  }
-
-  .title {
-    font-size: 30px;
-  }
-
-  .price,
-  .desc {
-    font-size: 24px;
-  }
+.galleryitem img:hover {
+  transform: scale(1.1);
 }
