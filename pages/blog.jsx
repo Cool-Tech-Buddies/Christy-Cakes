@@ -28,7 +28,7 @@ const blog = () => {
             </h3>
             <p className={styles.stepdescription}>
               If a cake has a fluffy cooked frosting, insert a knife handle
-              under an edge of the cake cover so it isn't airtight. The frosting
+              under an edge of the cake cover so it isnt airtight. The frosting
               can be totally absorbed by the cake when stored in an airtight
               container. If you don't have a cake cover, cakes with creamy
               frostings also can be covered lightly with foil, plastic wrap, or
