@@ -1,35 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600&family=Crimson+Text:ital@0;1&family=IM+Fell+Double+Pica&family=Kaushan+Script&display=swap");
 .sectiontestimonials {
   background-color: #fdf2e9;
   display: grid;
-  grid-template-columns: 55fr 45fr;
+  grid-template-columns: 45fr 45fr;
   align-items: center;
+  font-family: "Crimson Text", serif;
 }
+.subheading {
+  display: block;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #cf711f;
+  font-family: "Crimson Text", serif;
 
+  letter-spacing: 0.75px;
+
+  text-align: center;
+}
+.headingsecondary {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 3rem;
+  text-align: center;
+  font-family: "Crimson Text", serif;
+}
 .testimonialscontainer {
-  padding: 9.6rem;
+  padding: 2 rem;
 }
 
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 4.8rem;
-  column-gap: 8rem;
+  row-gap: 2rem;
+  column-gap: 4rem;
 }
 
 .testimonialimg {
-  width: 6.4rem;
+  width: 8rem;
   border-radius: 50%;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .testimonialtext {
-  font-size: 1.8rem;
-  line-height: 1.8;
+  font-size: 1.3rem;
+  line-height: 1;
   margin-bottom: 1.6rem;
 }
 
 .testimonialname {
-  font-size: 1.6rem;
+  font-size: 1rem;
   color: #6f6f6f;
 }
 

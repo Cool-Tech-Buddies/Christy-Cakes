@@ -2,9 +2,14 @@ import axios from "axios";
 import Image from "next/image";
 import { useState } from "react";
 import styles from "../../styles/Admin.module.css";
-
+import AddButton from "../../components/AddButton";
+import Add from "../../components/Add";
+import Update from "../../components/Update";
 const Index = ({ orders, products }) => {
   const [cakeList, setcakeList] = useState(products);
+  const [close, setClose] = useState(true);
+  const [Updateclose, UpdatesetClose] = useState(true);
+  const [data, setData] = useState(null);
   const [orderList, setOrderList] = useState(orders);
   const status = ["preparing", "on the way", "delivered"];
 
@@ -22,9 +27,11 @@ const Index = ({ orders, products }) => {
   const handleEdit = async (id) => {
     console.log(id);
     try {
-      const res = await axios.put(
-        "http://localhost:3000/api/products/" + id
-      );
+      const res = await axios.get("http://localhost:3000/api/products/" + id);
+      const data = res.data;
+      console.log(data);
+      setData(data);
+      UpdatesetClose(false);
       setcakeList(cakeList.filter((cake) => cake._id !== id));
     } catch (err) {
       console.log(err);
@@ -50,6 +57,8 @@ const Index = ({ orders, products }) => {
   return (
     <div className={styles.container}>
       <div className={styles.item}>
+        <AddButton setClose={setClose} />
+        {!close && <Add setClose={setClose} />}
         <h1 className={styles.title}>Products</h1>
         <table className={styles.table}>
           <tbody>
@@ -77,7 +86,15 @@ const Index = ({ orders, products }) => {
                 <td>{product.title}</td>
                 <td>Rs.{product.prices[0]}</td>
                 <td>
-                  <button className={styles.button}>Edit</button>
+                  <button
+                    className={styles.button}
+                    onClick={() => handleEdit(product._id)}
+                  >
+                    Edit
+                  </button>
+                  {!Updateclose && (
+                    <Update upddata={data} setClose={Updateclose} />
+                  )}
                   <button
                     className={styles.button}
                     onClick={() => handleDelete(product._id)}

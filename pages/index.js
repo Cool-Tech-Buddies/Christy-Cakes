@@ -9,7 +9,7 @@ import CakeList from "../components/CakeList";
 import Offers from "../components/Offers";
 import styles from "../styles/Home.module.css";
 import Special from "../components/Special";
-
+import Link from "next/link";
 export const getServerSideProps = async (ctx) => {
   const myCookie = ctx.req?.cookies || "";
   let admin = false;
@@ -54,7 +54,9 @@ export default function Home({ cakeList, admin }) {
           </p>
         </div>
         <div>
-          <button className={styles.btn}>DESIGN CAKES</button>
+          <Link href="/customcakes" passHref>
+            <button className={styles.btn}>DESIGN CAKES</button>
+          </Link>
         </div>
       </div>
 

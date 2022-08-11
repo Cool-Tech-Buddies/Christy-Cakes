@@ -69,7 +69,7 @@ const Footer = () => {
           <p className={styles.text}>
             Sign up for our mailing list to get latest updates and offers
           </p>
-          <form method="get">
+          <form method="get" action="mailto:mathi2002nagaraj@gmail.com">
             <div className={styles.inputgrp}>
               <input
                 className={styles.forminput}
@@ -78,12 +78,7 @@ const Footer = () => {
                 placeholder="Email Address"
               />
               <span>
-                <a
-                  type="submit"
-                  name="submit-mail"
-                  className={styles.btn}
-                  href="mailto:mathi2002nagaraj@gmail.com"
-                >
+                <a type="submit" name="submit-mail" className={styles.btn}>
                   Submit
                 </a>
               </span>

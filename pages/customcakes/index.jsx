@@ -13,17 +13,17 @@ const index = () => {
     },
     {
       name: "Wedding cakes",
-      src: "/img/Custom cakes/Wedding Cakes/cake (2).jpeg",
+      src: "/img/Custom cakes/Wedding Cakes/cake (1).jpg",
       link: "WeddingCake",
     },
     {
       name: "Theme cakes",
-      src: "/img/Custom cakes/Theme Cakes/cake (1).jpeg ",
+      src: "/img/Custom cakes/Theme Cakes/cake (4).jpg ",
       link: "ThemeCake",
     },
     {
       name: "Photo cakes",
-      src: "/img/Custom cakes/Photo cakes/cake (1).jpg",
+      src: "/img/Custom cakes/Photo cakes/cake (1).jpeg",
       link: "PhotoCake",
     },
     {
@@ -33,7 +33,7 @@ const index = () => {
     },
     {
       name: "Celebration cakes",
-      src: "/img/Custom cakes/Celebration cakes/cake (7).jpg",
+      src: "/img/Custom cakes/Celebration cakes/cake (5).jpg",
       link: "CelebrationCakes",
     },
   ];
