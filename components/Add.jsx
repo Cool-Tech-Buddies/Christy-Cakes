@@ -116,11 +116,11 @@ const Add = ({ setClose }) => {
           >
             <option value="None">None</option>
             <option value="kidsBirthday">Kids Cakes</option>
-            <option value="Wedding Cakes">Wedding Cakes</option>
-            <option value="Photo Cakes">Photo Cakes</option>
-            <option value="Occasional cakes">Occasional cakes</option>
-            <option value="Theme cakes">Theme cakes</option>
-            <option value="Celebration cakes">Celebration cakes</option>
+            <option value="WeddingCake">Wedding Cakes</option>
+            <option value="PhotoCake">Photo Cakes</option>
+            <option value="OccasionalCakes">Occasional cakes</option>
+            <option value="ThemeCake">Theme cakes</option>
+            <option value="CelebrationCakes">Celebration cakes</option>
           </select>
         </div>
         <button className={styles.addButton} onClick={handleCreate}>
