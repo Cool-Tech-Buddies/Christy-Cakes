@@ -60,7 +60,7 @@ export default function Home({ cakeList, admin }) {
           </Link>
         </div>
       </div>
-
+      <CakeList cakeList={cakeList} />
       {/* {admin == true ? <AddButton setClose={setClose} /> : null}
       <CakeList cakeList={cakeList} />
       {!close && <Add setClose={setClose} />}

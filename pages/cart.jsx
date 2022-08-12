@@ -102,6 +102,7 @@ const Cart = () => {
 
               <th>Price</th>
               <th>Quantity</th>
+              
               <th>Total</th>
             </tr>
           </tbody>
