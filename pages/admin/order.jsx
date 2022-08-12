@@ -56,7 +56,42 @@ const Index = ({ orders, products }) => {
 
   return (
     <div className={styles.container}>
-      <Add></Add>
+      <div className={styles.item}>
+        <h1 className={styles.title}>Orders</h1>
+        <table className={styles.table}>
+          <tbody>
+            <tr className={styles.trTitle}>
+              <th className={styles.tabledata}>Customer Id</th>
+              <th className={styles.tabledata}>Customer Name</th>
+              <th className={styles.tabledata}>Total</th>
+              <th className={styles.tabledata}>Payment Method</th>
+              <th className={styles.tabledata}>Status</th>
+              <th className={styles.tabledata}>Action</th>
+            </tr>
+          </tbody>
+          {orderList.map((order) => (
+            <tbody key={order._id}>
+              <tr className={styles.trTitle}>
+                <td className={styles.tabledata}>{order._id}</td>
+                <td className={styles.tabledata}>{order.customer}</td>
+                <td className={styles.tabledata}>Rs.{order.total}</td>
+                <td className={styles.tabledata}>
+                  {order.method === 0 ? <span>cash</span> : <span>paid</span>}
+                </td>
+                <td className={styles.tabledata}>{status[order.status]}</td>
+                <td className={styles.tabledata}>
+                  <button
+                    onClick={() => handleStatus(order._id)}
+                    className={styles.buttonorder}
+                  >
+                    Next Stage
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          ))}
+        </table>
+      </div>
     </div>
   );
 };

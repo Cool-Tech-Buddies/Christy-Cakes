@@ -6,25 +6,45 @@
 .item {
   flex: 1;
 }
-
+.title {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: rgb(246, 84, 84);
+}
+.tabledata {
+  font-size: 18px;
+}
+.tableheading {
+  font-size: 22px;
+}
 .table {
   width: 100%;
   border-spacing: 20px;
-  text-align: left;
+  text-align: center;
 }
 
-.button {
+.button,
+.buttonorder {
   border: none;
   color: white;
   padding: 5px;
   cursor: pointer;
+  background-color: teal;
 }
 
+.buttonorder,
 .button:first-child {
   background-color: teal;
   margin-right: 10px;
+  padding: 7px 15px 7px 15px;
+  font-size: 15px;
+  border-radius: 15px;
 }
 
 .button:last-child {
   background-color: crimson;
+  padding: 7px 15px 7px 15px;
+  border-radius: 15px;
+  font-size: 15px;
 }

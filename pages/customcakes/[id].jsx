@@ -8,6 +8,7 @@ export const getServerSideProps = async ({ params }) => {
   const res = await axios.get(
     `http://localhost:3000/api/customcakes/${params.id}`
   );
+
   return {
     props: {
       cakeList: res.data,

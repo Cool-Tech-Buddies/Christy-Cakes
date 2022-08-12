@@ -56,7 +56,55 @@ const Index = ({ orders, products }) => {
 
   return (
     <div className={styles.container}>
-      <Add></Add>
+      <div className={styles.item}>
+        <h1 className={styles.title}>Products Details</h1>
+        <table className={styles.table}>
+          <tbody>
+            <tr className={styles.trTitle}>
+              <th className={styles.tableheading}>Image</th>
+              <th className={styles.tableheading}>Id</th>
+              <th className={styles.tableheading}>Title</th>
+              <th className={styles.tableheading}>Price</th>
+              <th className={styles.tableheading}>Action</th>
+            </tr>
+          </tbody>
+          {cakeList.map((product) => (
+            <tbody key={product._id}>
+              <tr className={styles.trTitle}>
+                <td className={styles.tabledata}>
+                  <Image
+                    src={product.img}
+                    width={150}
+                    height={150}
+                    objectFit="cover"
+                    alt=""
+                  />
+                </td>
+                <td className={styles.tabledata}>{product._id}</td>
+                <td className={styles.tabledata}>{product.title}</td>
+                <td className={styles.tabledata}>Rs.{product.prices[0]}</td>
+                <td className={styles.tabledata}>
+                  <button
+                    className={styles.button}
+                    onClick={() => handleEdit(product._id)}
+                  >
+                    Edit
+                  </button>
+                  {!Updateclose && (
+                    <Update upddata={data} setClose={Updateclose} />
+                  )}
+                  <button
+                    className={styles.button}
+                    onClick={() => handleDelete(product._id)}
+                  >
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          ))}
+        </table>
+      </div>
     </div>
   );
 };

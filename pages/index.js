@@ -17,6 +17,7 @@ export const getServerSideProps = async (ctx) => {
   if (myCookie.token === process.env.TOKEN) {
     admin = true;
   }
+  console.log(admin);
 
   const res = await axios.get("http://localhost:3000/api/products");
   return {
@@ -60,11 +61,11 @@ export default function Home({ cakeList, admin }) {
         </div>
       </div>
 
-      {admin == true ? <AddButton setClose={setClose} /> : null}
+      {/* {admin == true ? <AddButton setClose={setClose} /> : null}
       <CakeList cakeList={cakeList} />
       {!close && <Add setClose={setClose} />}
 
-      <Offers></Offers>
+      <Offers></Offers> */}
     </div>
   );
 }
